@@ -17,7 +17,7 @@ const CartOverlay:React.FC = ():JSX.Element => {
     <div className='final-order-confirmed-background'>
     <section className='final-order-confirmed'>
       <figure>
-        <img src="/images/icon-order-confirmed.svg" alt="order confirmation" width={'30px'}/>
+        <img src={process.env.PUBLIC_URL+"/images/icon-order-confirmed.svg"} alt="order confirmation" width={'30px'}/>
       </figure>
       <header><h4 className='fw-bold'>Order Confirmed</h4><small className='text-secondary'>We hope you enjoy your food!</small></header>
       <section className='list-items-styling'>

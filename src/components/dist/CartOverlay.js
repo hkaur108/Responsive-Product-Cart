@@ -16,7 +16,7 @@ var CartOverlay = function () {
     return (React.createElement("div", { className: 'final-order-confirmed-background' },
         React.createElement("section", { className: 'final-order-confirmed' },
             React.createElement("figure", null,
-                React.createElement("img", { src: "/images/icon-order-confirmed.svg", alt: "order confirmation", width: '30px' })),
+                React.createElement("img", { src: process.env.PUBLIC_URL + "/images/icon-order-confirmed.svg", alt: "order confirmation", width: '30px' })),
             React.createElement("header", null,
                 React.createElement("h4", { className: 'fw-bold' }, "Order Confirmed"),
                 React.createElement("small", { className: 'text-secondary' }, "We hope you enjoy your food!")),
