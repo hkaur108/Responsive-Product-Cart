@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
+.product-container {
+  display: grid;
+  width: 100%;
+  grid-template-rows: rows;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-content: flex-start;
+  align-items: center;
+  margin: auto;
+}
+
+.product-name {
+  font-size: 0.8rem;
+}
+
+.product-category {
+  font-weight: 600;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.product-price {
+  color: #c73a0f !important;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.carbon-delivery {
+  background-color: #fcf9f7;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  margin: 0.2rem 0;
+  color: #5c6567;
+  font-weight: 600;
+}
+
+.carbon {
+  font-weight: 800;
+}
+
+.cart-confirm-order-button {
+  border-radius: 50px !important;
+}
+
+@media screen and (max-width: 600px) {
+  .heading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 250px));
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+}

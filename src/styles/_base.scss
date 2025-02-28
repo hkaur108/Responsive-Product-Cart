@@ -1,0 +1,27 @@
+@import './var';
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color:$Rose50;
+  position: relative;
+  font-family: "Red Hat Text", serif;
+  font-size: $Fontsize;
+}
+
+h1{
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h2{
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+h4{
+  font-weight: 700;
+  font-size: 1.50rem;
+}

@@ -1,0 +1,156 @@
+
+@import './var';
+
+.cart-container{
+  width:100%;
+  background-color:$Rose50;
+  font-size: 0.8rem;
+  animation: all 0.3s ease-in-out;
+}
+.cart-heading{
+  color:$Red;
+  font-weight: 700;
+}
+
+.selectedItem{
+  border:2px solid $Red!important;
+  background-color: $Red!important;
+  transition: all 0.3s ease-in-out;
+}
+
+.quantityStyles{
+  border-radius:30px!important;
+  font-size: .8rem;
+  background-color: $Red!important;
+  color:$Rose50;
+}
+.cart-overlay{
+  position: absolute;
+  display: block;
+  width: 100%;
+  height:100%;
+  top:0;
+  left:0;
+  padding: 0!important;
+  margin:0!important;
+  background:$Rose900 no-repeat top center;
+  z-index:1;
+}
+.order-list-styling{
+  border-bottom: 1px solid $LightGray;
+  margin:1rem 0;
+}
+.order-total{
+  font-size: 0.9rem;
+  font-weight:500;
+  color:$Gray;
+  padding:0.5rem 0.6rem;
+}
+.order-confirmed-name{
+    font-weight: 800;
+    font-size: 0.8rem;
+}
+.order-confirmed-quantity{
+    color:$Red;
+    font-weight: 800;
+    padding-right:0.8rem;
+}
+.order-product{
+  color:$Gray;
+  font-weight: 800;
+}
+.order-confirmed-button{
+  width:100%;
+  background-color: $Red!important;
+  border-radius: 50px!important;
+  color:$Rose50;
+  font-size: 0.75rem;
+  padding:0.5rem 0;
+  &:hover{
+    background-color: $Rose400;
+    color:$Rose900;
+    font-weight: 700;
+  }
+}
+
+
+.final-order-confirmed-background{
+    background-color: $Rose50!important;
+    opacity: 1;
+    position: absolute;
+    top:35%;
+    left:50%;
+}
+
+.final-order-confirmed{
+  display: block;
+  width:350px;
+  background-color: $Rose50;
+  border-radius: 10px;
+  padding:1.2rem;
+  position: absolute;
+  top:35%;
+  left:50%;
+  z-index:10;
+}
+
+.cart-styling{
+  
+} 
+.list-items-styling{
+  padding:10px 8px;
+  background-color: $Rose100;
+  border-radius: 8px;
+  opacity: 1;
+  
+}
+
+.listStyles{
+  border-bottom: 1px solid rgb(255, 247, 247);
+  margin:0.5rem 0!important;
+  padding:0.7rem 0;
+  border-bottom: 1px solid $Rose100;
+}
+.order-picture{
+  padding-right:0.8rem;
+  margin:0!important;
+  border-radius: 5px;
+}
+.product-info{
+  flex-basis: 200px;
+}
+.single-cart-name{
+  color:0.9rem;
+  font-weight: 700;
+  color:$Gray;
+}
+.single-cart-quantity{
+  color:$Red;
+  font-size: 0.8rem;
+  font-weight: 900;
+  padding-right: 15px;
+}
+.single-cart-rate{
+  color:gray;
+  padding-right: 10px;
+  font-size: 0.8rem;
+}
+.single-cart-total{
+  color:$Gray;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+.cart-confirm-order-button{
+  display: block;
+  width:100%;
+  background-color: $Red;
+  color:$Rose50;
+  outline:0;
+  border:0;
+  &:hover{
+    cursor: pointer;
+    background-color: $ButtonHover;
+    color:$Rose100;
+    transition: all 0.3s ease-in-out;
+  }
+}
