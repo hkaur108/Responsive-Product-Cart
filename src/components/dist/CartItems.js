@@ -47,6 +47,6 @@ function CartItems(item) {
                     "$",
                     (values.productQuantity * values.productPrice).toFixed(2)))),
         React.createElement("figure", { onClick: function () { return handleRemoveItem(item.item); }, className: 'remove-icon', style: { border: "1px solid grey", borderRadius: "50%", width: "20px", padding: "2px 1px", cursor: "pointer" } },
-            React.createElement("img", { src: "/images/icon-remove-item.svg", alt: "button to remove cart items", style: { margin: "auto", display: "block", width: "80%" } }))));
+            React.createElement("img", { src: process.env.PUBLIC_URL + "/images/icon-remove-item.svg", alt: "button to remove cart items", style: { margin: "auto", display: "block", width: "80%" } }))));
 }
 exports["default"] = CartItems;

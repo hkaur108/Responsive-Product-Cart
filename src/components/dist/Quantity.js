@@ -23,9 +23,9 @@ function Quantity(product) {
     return (React.createElement("section", { style: { borderRadius: "10px", padding: "0.5rem" }, className: 'quantityStyles' },
         React.createElement("div", { className: 'd-flex align-items-center justify-content-around' },
             React.createElement("button", { className: 'btn', onClick: function () { return handleDecrement(product); }, style: { width: "20px", border: "1px solid white", borderRadius: "50%", padding: "5px", cursor: "pointer" } },
-                React.createElement("img", { src: '/images/icon-decrement-quantity.svg', alt: 'decrement', style: { margin: "auto", display: "block", width: "100%", height: "7px" } })),
+                React.createElement("img", { src: process.env.PUBLIC_URL + '/images/icon-decrement-quantity.svg', alt: 'decrement', style: { margin: "auto", display: "block", width: "100%", height: "7px" } })),
             React.createElement("div", { className: 'text-light' }, quantity),
             React.createElement("button", { className: 'btn', onClick: function () { return handleIncrement(product); }, style: { width: "20px", border: "1px solid white", borderRadius: "50%", padding: "5px", cursor: "pointer" } },
-                React.createElement("img", { src: '/images/icon-increment-quantity.svg', alt: 'increment', style: { margin: "auto", display: "block", width: "100%" } })))));
+                React.createElement("img", { src: process.env.PUBLIC_URL + '/images/icon-increment-quantity.svg', alt: 'increment', style: { margin: "auto", display: "block", width: "100%" } })))));
 }
 exports["default"] = Quantity;

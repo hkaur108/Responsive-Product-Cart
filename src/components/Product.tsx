@@ -28,11 +28,11 @@ export default function Product(product:any):JSX.Element {
   return (
     <section className='product' style={{width:"200px"}}>
         <figure className='position-relative'>
-            <img  className={isClicked  && quantity >0 ?  'selectedItem' :"none"}  src={image.desktop} alt={name} width="200px" style={{borderRadius:"10px"}}/>
+            <img  className={isClicked  && quantity >0 ?  'selectedItem' :"none"}  src={process.env.PUBLIC_URL+ image.desktop} alt={name} width="200px" style={{borderRadius:"10px"}}/>
             {
                ( isClicked ==false)  ?
               (<button onClick={()=>handleClick(product)} style={{borderRadius:"30px",fontSize:'.8rem'}} 
-                className='w-75 btn btn-light border border-secondary fw-bold card-button position-absolute top-100 start-50 translate-middle'><img src="/images/icon-add-to-cart.svg" alt="add-to-cart" 
+                className='w-75 btn btn-light border border-secondary fw-bold card-button position-absolute top-100 start-50 translate-middle'><img src={process.env.PUBLIC_URL +"/images/icon-add-to-cart.svg"} alt="add-to-cart" 
             /> Add to Cart</button>) : 
             (
             <div className=' w-75 position-absolute top-100 start-50 translate-middle bg-danger text-light'style={{borderRadius:"30px"}}> 
